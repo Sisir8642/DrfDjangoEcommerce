@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-=0-=1#ztmsvgc(-ryruzd74p$a#&zsx*=zgg(8oywbo9i8(rj)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "drfrenderdjangoecommerce.onrender.com"]
 
 AUTH_USER_MODEL = 'users.User'
 
