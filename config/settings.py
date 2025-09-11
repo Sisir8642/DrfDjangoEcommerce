@@ -24,6 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', cast=bool)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -173,6 +174,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://drf-next-ecommerce-6iy6.vercel.app",
+    "https://drf-next-ecommerce-6iy6.vercel.app/"
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://drf-next-ecommerce-6iy6.vercel.app",

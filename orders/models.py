@@ -26,7 +26,7 @@ class OrderItem(models.Model):
 
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='items')
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    quantity = models.PositiveIntegerField(max_length=3)
+    quantity = models.PositiveIntegerField()
     price_at_order = models.DecimalField(decimal_places=2, max_digits=10)
 
     def __str__(self):
