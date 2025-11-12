@@ -174,8 +174,9 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://drf-next-ecommerce-6iy6.vercel.app",
-    "https://drf-next-ecommerce-6iy6.vercel.app/"
+    
 ]
+
 CSRF_TRUSTED_ORIGINS = [
     "https://drf-next-ecommerce-6iy6.vercel.app",
 ]
